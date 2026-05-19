@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Joulymae E. Tamayo BSN-2D</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+/* BODY */
+body{
+  color:#333;
+  background:#ffffff;
+}
+
+/* background effect */
+body::before{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:
+    radial-gradient(circle at top left, rgba(128,0,32,0.08), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(128,0,32,0.06), transparent 50%);
+  pointer-events:none;
+  z-index:0;
+}
+
+body > *{
+  position:relative;
+  z-index:1;
+}
+
+/* NAV */
+nav{
+  background:#800020;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav h2{
+  color:white;
+}
+
+nav a{
+  text-decoration:none;
+  margin-left:20px;
+  color:#f5f5f5;
+  font-weight:500;
+}
+nav a:hover{
+  color:#ffd6e0;
+}
+
+/* HERO */
+header{
+  text-align:center;
+  padding:80px 50px;
+  background:linear-gradient(135deg,#800020,#a0002a);
+  color:white;
+  border-radius:0 0 0px 0px;
+  margin:10px;
+}
+
+header h1{
+  font-size:60px;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+header p{
+  margin-top:10px;
+  opacity:0.9;
+  font-family:Dancing Script', cursive;
+  font-size:18px;
+  letter-spacing:1px;
+}
+
+/* SECTIONS */
+section{
+  max-width:1000px;
+  margin:70px auto;
+  padding:0 20px;
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:25px;
+  color:#800020;
+}
+
+/* ABOUT + GOALS BOX */
+.about{
+  background:#ffffff;
+  padding:30px;
+  border-radius:0px;
+  border-left:5px solid #800020;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+  align-items:justify;
+  line-height:1.8;
+}
+
+/* BUTTON */
+button{
+  background:#800020;
+  color:white;
+  border:none;
+  padding:12px 25px;
+  border-radius:25px;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+button:hover{
+  background:#a0002a;
+}
+
+/* PHOTO ROW */
+.photo-row{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.photo-row img{
+  border-radius:12px;
+  border:2px solid #800020;
+}
+
+/* education */
+.edu-box{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:15px;
+  border-left:5px solid #800020;
+  box-shadow:0 3px 12px rgba(0,0,0,0.05);
+}
+
+/* HOBBIES GRID */
+.hobbies-grid{
+  display:grid;
+  grid-template-columns:repeat(5, 1fr);
+  gap:15px;
+  margin-top:20px;
+}
+
+/* HOBBY CARD */
+.hobby-card{
+  background:#fff;
+  border-radius:12px;
+  padding:15px;
+  text-align:center;
+  border:2px solid #800020;
+  box-shadow:0 5px 12px rgba(0,0,0,0.08);
+  transition:0.3s ease;
+}
+
+.hobby-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+.hobby-card img{
+  width:100%;
+  height:120px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-top:10px;
+}
+
+.hobby-card h3{
+  color:#800020;
+  margin-bottom:8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px){
+  .hobbies-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px){
+  .hobbies-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#777;
+  border-top:1px solid #eee;
+  margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Joulymae</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#goals">Goals</a>
+    <a href="#education">Education</a>
+    <a href="#photo">Photo</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Good day! I'm Joulymae Tamayo</h1>
+  <p>thinker and a feeler—a poet on my own.</p>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about">
+    My name is <strong>Joulymae Epili Tamayo</strong>. You can call me <strong>Ae</strong> for short. I am a nursing student who values compassion, discipline, and growth.
+    Im a thinker and a feeler—a poet in my own way. I’m expressive, practical, and guided by both logic and emotion. As a Virgo and the eldest of five siblings, 
+    I naturally take responsibility and value organization, growth, and purpose in everything I do.
+  </div>
+</section>
+
+<section id="hobbies">
+  <h2>Hobbies</h2>
+
+  <div class="hobbies-grid">
+
+    <div class="hobby-card">
+      <h3>Singing</h3>
+      <img src="singing.jpg">
+      <p>I love expressing emotions through music.</p>
+    </div>
+
+    <div class="hobby-card">
+      <h3>Designing</h3>
+      <img src="costume.png">
+      <p>I love designing, in terms of houses, clothes and costumes.</p>
+    </div>
+
+    <div class="hobby-card">
+      <h3>Drawing</h3>
+      <img src="drawing.png">
+      <p>Creativity through sketches.</p>
+    </div>
+
+    <div class="hobby-card">
+      <h3>Modeling</h3>
+      <img src="pogi.png">
+      <p>I enjoy modeling as it helps me express myself.</p>
+    </div>
+
+    <div class="hobby-card">
+      <h3> Watching</h3>
+      <img src="shameless.jpg">
+      <p>A way explore different stories and enjoy my free time.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="goals">
+  <h2>Goals</h2>
+  <div class="about">
+    My goal is to become a registered nurse, get a good job, and live a stable life.
+    I also dream of buying a Harley-Davidson motorcycle, build my own house, and achieve financial independence. 
+    Above all, I want to live a life that I am proud of — successful, stable, and able to give back to the people who supported me.
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="edu-box">
+    <h3>Primary</h3>
+    Four Shepherd Divine Academy (4SDA)<br>
+    2009–2016
+  </div>
+
+  <div class="edu-box">
+    <h3>Secondary</h3>
+   Junior High: Rebeca Ernesto Camilo (REC)<br>
+   S.Y. 20216-2020 <br>
+   Senior High: Antipolo City Senior High School <br>
+   Technology and Livelihood Education 
+   S.Y. 2020-2022
+  </div>
+   
+  <div class="edu-box">
+    <h3>Tertiary</h3>
+    Bachelor of Science in Nursing<br>
+    World Citi Colleges<br>
+    2023–2028
+  </div>
+</section>
+
+<section id="Photos">
+  <h2>Photos</h2>
+  <button onclick="showPhotos()">Show Photos</button>
+
+  <div class="photo-row" id="photosBox" style="display:none;">
+    <img src="opera.png" width="250">
+    <img src="ge.png" width="250">
+    <img src="swim.png" width="250">
+    <img src="ako.png" width="250">
+    <img src="cine.png" width="250">
+    <img src="spidey.png" width="250">
+  </div>
+</section>
+
+<footer>
+  © 2026 Joulymae Tamayo | All Rights Reserved
+</footer>
+
+<script>
+function showPhotos(){
+  document.getElementById("photosBox").style.display = "flex";
+}
+</script>
+
+</body>
+</html>
